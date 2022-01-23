@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Please enter the details below"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:hint="Enter ID"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter Salary"
+        android:inputType="numberDecimal"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="SAVE"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/salary"/>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@+id/btnSave"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@+id/btnRefresh"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="view"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@+id/btnUpdate"/>
+
+</RelativeLayout>
